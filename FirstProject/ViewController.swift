@@ -20,12 +20,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         redColorView.layer.cornerRadius = redColorView.frame.height / 2
         yellowColorView.layer.cornerRadius = yellowColorView.frame.height / 2
         greenColorView.layer.cornerRadius = greenColorView.frame.height / 2
-
+        
     }
-
+   
 
     @IBAction func colorSwitchingButtonPressed() {
 //        colorSwitchingButton.setTitle( , for: .normal)
