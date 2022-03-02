@@ -9,11 +9,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var redColorView: UIView!
+    
+    @IBOutlet var yellowColorView: UIView!
+    
+    @IBOutlet var greenColorView: UIView!
+    
+    @IBOutlet var colorSwitchingButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        redColorView.layer.cornerRadius = redColorView.frame.height / 2
+        yellowColorView.layer.cornerRadius = yellowColorView.frame.height / 2
+        greenColorView.layer.cornerRadius = greenColorView.frame.height / 2
+
     }
 
 
+    @IBAction func colorSwitchingButtonPressed() {
+//        colorSwitchingButton.setTitle( , for: .normal)
+    }
 }
 
