@@ -31,7 +31,6 @@
                                 </state>
                                 <connections>
                                     <action selector="colorSwitchingButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pfk-Jr-XmI"/>
-                                    <action selector="colorSwitchingButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8T1-FC-3xb"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="r1k-OZ-Blv">
