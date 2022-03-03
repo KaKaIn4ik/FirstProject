@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
     }
 
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
     
         
     @IBAction func colorSwitchingButtonPressed() {
+        colorSwitchingButton.setTitle("NEXT", for: .normal)
         if redColorView.alpha == startAlphaLabel  {
             redColorView.alpha = defaultAlphaLabel
             yellowColorView.alpha = startAlphaLabel
