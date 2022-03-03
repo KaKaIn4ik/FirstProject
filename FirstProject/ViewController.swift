@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
+
+    let defaultAlphaLabel: CGFloat = 0.3
+    let startAlphaLabel: CGFloat = 1
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         redColorView.layer.cornerRadius = redColorView.frame.height / 2
@@ -30,9 +34,21 @@ class ViewController: UIViewController {
         
     }
    
-
+    
+        
     @IBAction func colorSwitchingButtonPressed() {
-//        colorSwitchingButton.setTitle( , for: .normal)
+        if redColorView.alpha == startAlphaLabel  {
+            redColorView.alpha = defaultAlphaLabel
+            yellowColorView.alpha = startAlphaLabel
+        } else if yellowColorView.alpha == startAlphaLabel {
+            yellowColorView.alpha = defaultAlphaLabel
+            greenColorView.alpha = startAlphaLabel
+        } else if greenColorView.alpha == startAlphaLabel {
+            greenColorView.alpha = defaultAlphaLabel
+            redColorView.alpha = startAlphaLabel
+        } else {
+            redColorView.alpha = startAlphaLabel
+        }
     }
 }
 
